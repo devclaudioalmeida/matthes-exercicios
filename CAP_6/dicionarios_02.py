@@ -1,4 +1,4 @@
-#exercício 6.3 glossário
+#exercício 6.3 e 6.4 glossário
 
 glos = {'int': 'Converte um valor para numero inteiro!',
         'float': 'Converte um valor para numero real!', 
