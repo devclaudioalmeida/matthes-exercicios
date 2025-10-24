@@ -1,4 +1,4 @@
-#Exercício 9.3, 9.5
+#Exercício 9.3, 9.5, 9.7, 9.8
 class Usuario:
     def __init__(self, nome, sobrenome):
         #Inicializa os atributos nome e sobrenome
@@ -26,42 +26,8 @@ class Usuario:
     def get_tentativas_login(self):
         #Retorna o número de tentativas de login
         return self.tentativas_login
-    
-class Admin (Usuario):
-    #Usuário é um tipo especial de usuário então poser se uma classe filha de usuário
-    def __init__(self, nome, sobrenome):
-        #Inicializa os atributos da Classe Pai (usuario)
-        super().__init__(nome, sobrenome)
-        self.permissoes = ['Cadastrar Usuários', 'Deletar Posts', 'Confugurações Gerais']
-
-    def get_permissoes(self):
-        #Retorna a lista de permissões do usuário Admin
-        return self.permissoes
 
 
 
 
-usuario_01 = Admin('Cláudio', 'Almeida')
-usuario_02 = Usuario('José', 'Almeida')
-usuario_03 = Usuario('Antônio', 'Almeida')
-print('*' * 60)
-usuario_01.descricao_usuario()
-usuario_02.descricao_usuario()
-usuario_03.descricao_usuario()
-print('*' * 60)
-usuario_01.cumprimenta_usuario()
-usuario_02.cumprimenta_usuario()
-usuario_03.cumprimenta_usuario()
-print('*' * 60)
-print(f'O usuário {usuario_02.nome} tentou logar {usuario_02.get_tentativas_login()} vezes no sistema!')
-usuario_02.incremeta_tentativas_login()
-usuario_02.incremeta_tentativas_login()
-usuario_02.incremeta_tentativas_login()
-usuario_02.incremeta_tentativas_login()
-print('*' * 60)
-print(f'O usuário {usuario_01.nome} tem as seguintes permisssões de administrador: {usuario_01.get_permissoes()}')
-print('*' * 60)
-print(f'O usuário {usuario_02.nome} tentou logar {usuario_02.get_tentativas_login()} vezes no sistema!')
-usuario_02.reset_tentativas_login()
-print('*' * 60)
-print(f'O usuário {usuario_02.nome} tentou logar {usuario_02.get_tentativas_login()} vezes no sistema!')
+
