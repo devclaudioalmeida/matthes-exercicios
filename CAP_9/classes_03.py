@@ -57,14 +57,14 @@ class Bateria:
                 break
         
     
-class Carro_Eletrico(Carro):
+class CarroEletrico(Carro):
     def __init__(self, marca, modelo, ano):
         #inicializa toso os atributos da classe pai (Carro)
         super().__init__(marca, modelo, ano)
         self.bateria = Bateria()
 
 
-meu_carro = Carro_Eletrico('BYD', 'Dolphin', '2024')
+meu_carro = CarroEletrico('BYD', 'Dolphin', '2024')
 meu_carro.bateria.get_autonomia()
 meu_carro.bateria.troca_bateria()
 meu_carro.bateria.get_autonomia()
