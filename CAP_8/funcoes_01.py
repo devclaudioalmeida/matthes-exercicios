@@ -7,7 +7,8 @@ def mostrar_mensagem():
 
 def livro_favorito(livro):
     """Exibe uma mensagem na tela com o livro favorito"""
-    print(f'Meu livro favorito é: {livro}')
+    #print(f'Meu livro favorito é: {livro}')
+    return livro
 
 def make_shirt(tam='G', texto='Eu amo Python!'):
     """
@@ -20,11 +21,10 @@ def descreva_cidade(cidade='Florianópolis', pais='Brasil'):
     """Exibe o nome de uma cidade e em qual pais ela está localizada!"""
     print(f'{cidade} está localizada no(a) {pais}!')
 
-
+"""
 mostrar_mensagem()
 print('=' * 50)
-fav_livro = 'Curso Intensivo de Python'
-livro_favorito(fav_livro)
+print(f'Meu livro favorito é: {livro_favorito('Curso intensivo de Python')}')
 print('=' * 50)
 make_shirt(texto='Sou de mais!', tam='M')
 make_shirt('XG', 'Eu não sou GORDO!')
@@ -35,4 +35,4 @@ print('=' * 50)
 descreva_cidade(cidade='Belo Horizonte')
 descreva_cidade(pais='Itália', cidade='Veneza')
 descreva_cidade()
-print('=' * 50)
+print('=' * 50)"""
