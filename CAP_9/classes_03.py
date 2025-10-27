@@ -41,7 +41,7 @@ class Bateria:
             aut = 250
         elif self.capacidade_bateria == 65:
             aut = 350
-        print(f'Essa bateria compeltamente carregada tem uma autonomia de até {aut} quilometros!')
+        print(f'Essa bateria completamente carregada tem uma autonomia de até {aut} quilometros!')
     def troca_bateria(self):
         #Metodo para troca da bateria
         while True:
@@ -64,7 +64,3 @@ class CarroEletrico(Carro):
         self.bateria = Bateria()
 
 
-meu_carro = CarroEletrico('BYD', 'Dolphin', '2024')
-meu_carro.bateria.get_autonomia()
-meu_carro.bateria.troca_bateria()
-meu_carro.bateria.get_autonomia()
